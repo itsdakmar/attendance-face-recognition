@@ -19,7 +19,7 @@ class StudentController extends Controller
         $file_name = uniqid().'.jpg';
         $directory = $_SERVER['DOCUMENT_ROOT'].'/argon'."/student/img/".auth()->user()->staff_id;
         if(!File::exists($directory)) {
-            File::makeDirectory($directory, 0777, true);
+            File::makeDirectory($directory, 777, true);
         }
 
         $result = file_put_contents( $directory.'/'.$file_name, $binary_data );
