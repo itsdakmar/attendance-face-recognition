@@ -117,7 +117,7 @@
             <!-- Navigation -->
             <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard/docs/getting-started/overview.html">
+                    <a class="nav-link" href="{{ asset('argon/user-manual.pdf') }}" TARGET="_blank">
                         <i class="ni ni-spaceship"></i> Getting started
                     </a>
                 </li>

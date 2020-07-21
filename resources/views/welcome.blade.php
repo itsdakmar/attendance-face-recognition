@@ -7,6 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6">
                         <h1 class="text-white">{{ __('Welcome to Face Attendance System Live Preview.') }}</h1>
+                        <a href="{{ asset('argon/user-manual.pdf') }}" target="_blank" class="btn bg-gradient-green text-white btn-block">User Manual / How to use </a>
                     </div>
                 </div>
             </div>
