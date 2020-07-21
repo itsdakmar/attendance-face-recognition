@@ -16,9 +16,11 @@
                             <div class="col-8">
                                 <h3 class="mb-0">Lecturer Available</h3>
                             </div>
+                            @hasanyrole('administrator')
                             <div class="col-4 text-right">
                                 <a href="{{ route('user.create') }}" class="btn btn-sm btn-primary">Add lecturer</a>
                             </div>
+                            @endhasanyrole
                         </div>
                     </div>
 
