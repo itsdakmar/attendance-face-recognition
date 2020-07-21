@@ -59,8 +59,9 @@ class AttendanceController extends Controller
     }
 
     public function show($class_id){
-        $class = Attendance::with('subject')->findOrFail($class_id)->get();
-        return view('attendance.show', compact('class'));
+        $class = Attendance::findOrFail($class_id)->first();
+        $students = AttendanceStudent::where('class_id', $class_id)->get();
+        return view('attendance.show', compact('class','students'));
     }
 
     public function live($class_id){

@@ -27,12 +27,17 @@ class AttendanceStudent extends Model
      */
     protected $fillable = ['student_id', 'is_attend', 'class_id', 'created_at', 'updated_at'];
 
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-     */
-    public function subject()
+//    /**
+//     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+//     */
+//    public function subject()
+//    {
+//        return $this->belongsTo('App\Subject', 'class_id');
+//    }
+
+    public function attendance()
     {
-        return $this->belongsTo('App\Subject', 'class_id');
+        return $this->belongsTo('App\Attendance', 'class_id');
     }
 
     /**

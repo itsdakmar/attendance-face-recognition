@@ -69,7 +69,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                                @foreach($class[0]->students as $student)
+                                @foreach($students as $student)
                                     <tr>
                                         <td>{{ $student->user->staff_id }}</td>
                                         <td>{{ $student->user->name }}</td>
