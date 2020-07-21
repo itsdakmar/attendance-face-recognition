@@ -51,6 +51,7 @@ video.addEventListener('play', async () => {
                         }
                     });
                     if(exists === false ) {
+                        new Audio('http://localhost/argon/beep.mp3').play()
                         newArray.push(data);
                     }
 

@@ -57,23 +57,7 @@
                                             </button>
                                         </td>
                                     @endif
-                                    @else
-                                        <td class="text-right">
-                                            <div class="dropdown">
-                                                <a class="btn btn-sm btn-icon-only text-light" href="#" role="button"
-                                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    <i class="fas fa-ellipsis-v"></i>
-                                                </a>
-                                                <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
-                                                     x-placement="bottom-end"
-                                                     style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(32px, 32px, 0px);">
-                                                    <a class="dropdown-item"
-                                                       href="{{ route('subject.add-student', $subject->id) }}">Add
-                                                        Students</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        @endhasanyrole()
+                                    @endhasanyrole
                                 </tr>
                             @endforeach
                             </tbody>
