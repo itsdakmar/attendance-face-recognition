@@ -51,7 +51,7 @@ video.addEventListener('play', async () => {
                         }
                     });
                     if(exists === false ) {
-                        new Audio('http://localhost/argon/beep.mp3').play()
+                        new Audio('https://ascms.me/argon/beep.mp3').play()
                         newArray.push(data);
                     }
 
@@ -77,7 +77,7 @@ function loadLabeledImages(labels) {
     return Promise.all(
         labels.map(async label => {
             const descriptions = []
-            const img = await faceapi.fetchImage('http://localhost/student/'+label+'/image')
+            const img = await faceapi.fetchImage('https://ascms.me/student/'+label+'/image')
             const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
             descriptions.push(detections.descriptor)
 
