@@ -13,7 +13,6 @@
             top: 0;
             left: 1rem;
             z-index: 10;
-            background-color:rgba(255,0,0,0.5);
         }
     </style>
 

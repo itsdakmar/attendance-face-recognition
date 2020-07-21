@@ -60,7 +60,7 @@ class AttendanceController extends Controller
 
     public function show($class_id){
         $class = Attendance::with('subject')->findOrFail($class_id)->first();
-
+dd($class->students);
         return view('attendance.show', compact('class'));
     }
 
