@@ -57,6 +57,8 @@
                                             </button>
                                         </td>
                                     @endif
+                                    @else
+                                        <td></td>
                                     @endhasanyrole
                                 </tr>
                             @endforeach

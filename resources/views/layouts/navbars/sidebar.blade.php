@@ -83,26 +83,32 @@
                         <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
+                @hasanyrole('admin|student')
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('user.index') }}">
                         <i class="ni ni-circle-08 text-pink"></i> {{ __('Lecturer List') }}
                     </a>
                 </li>
+                @endhasanyrole
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('subject.index') }}">
                         <i class="ni ni-planet text-blue"></i> {{ __('Subject List') }}
                     </a>
                 </li>
+                @hasanyrole('student')
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('student.profile') }}">
                         <i class="ni ni-pin-3 text-orange"></i> {{ __('Profile') }}
                     </a>
                 </li>
+                @endhasanyrole
+                @hasanyrole('lecturer')
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('attendance.index') }}">
                         <i class="ni ni-key-25 text-info"></i> {{ __('Attendance') }}
                     </a>
                 </li>
+                @endhasanyrole
             </ul>
             <!-- Divider -->
             <hr class="my-3">

@@ -42,4 +42,12 @@ class Attendance extends Model
     {
         return $this->hasMany('App\AttendanceStudent', 'class_id');
     }
+
+    public function getStatusAttribute($value){
+        if($value === 0){
+            return 'Open';
+        }else {
+            return 'Closed';
+        }
+    }
 }
