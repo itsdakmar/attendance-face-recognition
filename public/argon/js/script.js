@@ -24,7 +24,7 @@ video.addEventListener('play', async () => {
     const labeledFaceDescriptors = await getStudent($('#class_id').data('subject')).then((res) =>
         loadLabeledImages(res)
     );
-    const faceMatcher = await new faceapi.FaceMatcher(labeledFaceDescriptors, 1)
+    const faceMatcher = await new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6)
 
     setInterval(async () => {
         // FACE REC
