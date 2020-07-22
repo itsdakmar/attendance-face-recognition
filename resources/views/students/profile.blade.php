@@ -10,6 +10,14 @@
     <div class="container-fluid mt--7">
         <div class="row">
             <div class="col-xl-8 order-xl-1">
+                @if (session('status'))
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        {{ session('status') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <div class="card bg-secondary shadow">
                     <div class="card-header bg-white border-0">
                         <div class="row align-items-center">
@@ -54,7 +62,7 @@
                             <div class="pl-lg-4">
                                 <div class="form-group">
                                     <label class="form-control-label" for="input-name">{{ __('Name') }}</label>
-                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative" placeholder="{{ __('Name') }}" value="{{ old('name', $student->name) }}" readonly autofocus>
+                                    <input type="text" name="name" id="input-name" class="form-control form-control-alternative" placeholder="{{ __('Name') }}" value="{{ old('name', $student->name) }}" readonly>
                                 </div>
 
                                 <div class="form-group">
