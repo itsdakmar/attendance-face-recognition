@@ -3,7 +3,7 @@
 @section('content')
     @include('layouts.partials.header', [
             'title' => __('Hello,') . ' '. auth()->user()->name,
-            'description' => __('This is your profile page. You can see the progress you\'ve made with your work and manage your projects or assigned tasks'),
+            'description' => __('Please wait at least 10 - 15 seconds for face recognition to fully load.'),
             'class' => 'col-lg-7'
         ])
 

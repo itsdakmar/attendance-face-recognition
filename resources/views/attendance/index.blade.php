@@ -17,8 +17,7 @@
                                 <h3 class="mb-0">List Of Created Class</h3>
                             </div>
                             <div class="col-4 text-right">
-                                <a href="{{ route('attendance.create') }}" class="btn btn-sm btn-primary">Add
-                                    subject</a>
+                                <a href="{{ route('attendance.create') }}" class="btn btn-sm btn-primary">Create Class</a>
                             </div>
                         </div>
                     </div>
